@@ -91,7 +91,8 @@
                     'USER_GROUP': 'USER.png',
 					'UNAUTHORIZED': 'UNAUTHORIZED.png',
 					'JBOSS': 'JBOSS.png',
-                    'JBOSS_GROUP': 'JBOSS.png'
+                    'JBOSS_GROUP': 'JBOSS.png',
+                    'PHP': 'PHP.png'
                 },
                 "htNodeTheme": {
                     "default": {
