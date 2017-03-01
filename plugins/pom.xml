@@ -57,6 +57,7 @@
         <module>rxjava</module>
         <module>rabbitmq</module>
         <module>weblogic</module>
+        <module>php</module>
     </modules>
 
     <dependencies>
@@ -257,6 +258,7 @@
         </dependency>
         <dependency>
             <groupId>com.navercorp.pinpoint</groupId>
+<<<<<<< f2bda3c7ec1e2345980004f7ade91d98d3cea9d0
             <artifactId>pinpoint-vertx-plugin</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -283,6 +285,9 @@
         <dependency>
             <groupId>com.navercorp.pinpoint</groupId>
             <artifactId>pinpoint-weblogic-plugin</artifactId>
+=======
+            <artifactId>pinpoint-php-plugin</artifactId>
+>>>>>>> Add PHP plugin.
             <version>${project.version}</version>
         </dependency>
     </dependencies>
