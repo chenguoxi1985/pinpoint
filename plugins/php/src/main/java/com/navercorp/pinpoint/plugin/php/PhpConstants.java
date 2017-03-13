@@ -16,6 +16,10 @@ package com.navercorp.pinpoint.plugin.php;
 
 import static com.navercorp.pinpoint.common.trace.ServiceTypeProperty.*;
 
+import com.navercorp.pinpoint.common.trace.AnnotationKey;
+import com.navercorp.pinpoint.common.trace.AnnotationKeyFactory;
+import com.navercorp.pinpoint.common.trace.AnnotationKeyMatchers;
+import com.navercorp.pinpoint.common.trace.AnnotationKeyProperty;
 import com.navercorp.pinpoint.common.trace.ServiceType;
 import com.navercorp.pinpoint.common.trace.ServiceTypeFactory;
 
@@ -28,6 +32,11 @@ public final class PhpConstants {
     }
 
     public static final ServiceType PHP = ServiceTypeFactory.of(1921, "PHP", RECORD_STATISTICS);
-    public static final ServiceType PHP_METHOD = ServiceTypeFactory.of(1922, "PHP_METHOD");
+    public static final ServiceType PHP_DB_CLIENT = ServiceTypeFactory.of(2921, "PHP_DB_CLIENT");
+    public static final ServiceType PHP_CACHE_CLIENT = ServiceTypeFactory.of(8921, "PHP_CACHE_CLIENT");
+    public static final ServiceType PHP_RPC_CLIENT = ServiceTypeFactory.of(9921, "PHP_METHOD");
+    public static final ServiceType PHP_OTHERS = ServiceTypeFactory.of(7521, "PHP_OTHERS");
+
+    public static final AnnotationKey PHP_FUNCTION_RETURN = AnnotationKeyFactory.of(921, "php.return", AnnotationKeyProperty.VIEW_IN_RECORD_SET);
 
 }

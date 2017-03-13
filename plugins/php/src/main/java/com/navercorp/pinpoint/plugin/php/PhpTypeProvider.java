@@ -14,6 +14,7 @@
  */
 package com.navercorp.pinpoint.plugin.php;
 
+import com.navercorp.pinpoint.common.trace.AnnotationKeyMatchers;
 import com.navercorp.pinpoint.common.trace.TraceMetadataProvider;
 import com.navercorp.pinpoint.common.trace.TraceMetadataSetupContext;
 
@@ -26,6 +27,11 @@ public class PhpTypeProvider implements TraceMetadataProvider {
     @Override
     public void setup(TraceMetadataSetupContext context) {
         context.addServiceType(PhpConstants.PHP);
-        context.addServiceType(PhpConstants.PHP_METHOD);
+        context.addServiceType(PhpConstants.PHP_DB_CLIENT);
+        context.addServiceType(PhpConstants.PHP_CACHE_CLIENT);
+        context.addServiceType(PhpConstants.PHP_RPC_CLIENT, AnnotationKeyMatchers.ARGS_MATCHER);
+        context.addServiceType(PhpConstants.PHP_OTHERS);
+
+        context.addAnnotationKey(PhpConstants.PHP_FUNCTION_RETURN);
     }
 }
