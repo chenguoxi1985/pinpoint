@@ -33,5 +33,7 @@ public class PhpTypeProvider implements TraceMetadataProvider {
         context.addServiceType(PhpConstants.PHP_OTHERS);
 
         context.addAnnotationKey(PhpConstants.PHP_FUNCTION_RETURN);
+        context.addAnnotationKey(PhpConstants.PHP_FUNCTION_ARGS);
+        context.addAnnotationKey(PhpConstants.PHP_FUNCTION_DESCRIPTION);
     }
 }
