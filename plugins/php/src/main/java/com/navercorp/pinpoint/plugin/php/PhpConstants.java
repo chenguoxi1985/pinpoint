@@ -38,5 +38,6 @@ public final class PhpConstants {
     public static final ServiceType PHP_OTHERS = ServiceTypeFactory.of(7521, "PHP_OTHERS");
 
     public static final AnnotationKey PHP_FUNCTION_RETURN = AnnotationKeyFactory.of(921, "php.return", AnnotationKeyProperty.VIEW_IN_RECORD_SET);
-
+    public static final AnnotationKey PHP_FUNCTION_ARGS = AnnotationKeyFactory.of(922, "php.args", AnnotationKeyProperty.VIEW_IN_RECORD_SET);
+    public static final AnnotationKey PHP_FUNCTION_DESCRIPTION = AnnotationKeyFactory.of(923, "php.description", AnnotationKeyProperty.VIEW_IN_RECORD_SET);
 }
