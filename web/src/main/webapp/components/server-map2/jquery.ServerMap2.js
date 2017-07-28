@@ -92,7 +92,8 @@
 					'UNAUTHORIZED': 'UNAUTHORIZED.png',
 					'JBOSS': 'JBOSS.png',
                     'JBOSS_GROUP': 'JBOSS.png',
-                    'PHP': 'PHP.png'
+                    'PHP': 'PHP.png',
+                    'HTTPD': 'HTTPD.png'
                 },
                 "htNodeTheme": {
                     "default": {

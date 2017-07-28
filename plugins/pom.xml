@@ -47,6 +47,7 @@
         <module>hystrix</module>
         <module>jboss</module>
         <module>php</module>
+        <module>httpd</module>
     </modules>
 
     <dependencies>
@@ -223,6 +224,11 @@
         <dependency>
             <groupId>com.navercorp.pinpoint</groupId>
             <artifactId>pinpoint-php-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.navercorp.pinpoint</groupId>
+            <artifactId>pinpoint-httpd-plugin</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

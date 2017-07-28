@@ -1,0 +1,3 @@
+com/navercorp/pinpoint/plugin/httpd/HttpdTypeProvider.class
+com/navercorp/pinpoint/plugin/httpd/HttpdConstants.class
+com/navercorp/pinpoint/plugin/httpd/HttpdPlugin.class
