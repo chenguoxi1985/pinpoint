@@ -31,13 +31,7 @@ public final class PhpConstants {
     private PhpConstants() {
     }
 
-    public static final ServiceType PHP = ServiceTypeFactory.of(1921, "PHP", RECORD_STATISTICS);
-    public static final ServiceType PHP_DB_CLIENT = ServiceTypeFactory.of(2921, "PHP_DB_CLIENT");
-    public static final ServiceType PHP_CACHE_CLIENT = ServiceTypeFactory.of(8921, "PHP_CACHE_CLIENT");
-    public static final ServiceType PHP_RPC_CLIENT = ServiceTypeFactory.of(9921, "PHP_METHOD");
-    public static final ServiceType PHP_OTHERS = ServiceTypeFactory.of(7521, "PHP_OTHERS");
-
-    public static final AnnotationKey PHP_FUNCTION_RETURN = AnnotationKeyFactory.of(921, "php.return", AnnotationKeyProperty.VIEW_IN_RECORD_SET);
-    public static final AnnotationKey PHP_FUNCTION_ARGS = AnnotationKeyFactory.of(922, "php.args", AnnotationKeyProperty.VIEW_IN_RECORD_SET);
-    public static final AnnotationKey PHP_FUNCTION_DESCRIPTION = AnnotationKeyFactory.of(923, "php.description", AnnotationKeyProperty.VIEW_IN_RECORD_SET);
+    public static final ServiceType PHP = ServiceTypeFactory.of(1500, "PHP", RECORD_STATISTICS);
+    public static final ServiceType PHP_METHOD = ServiceTypeFactory.of(1501, "PHP_METHOD");
+    public static final ServiceType PHP_REMOTE_METHOD = ServiceTypeFactory.of(9700, "PHP_REMOTE_METHOD", RECORD_STATISTICS);
 }

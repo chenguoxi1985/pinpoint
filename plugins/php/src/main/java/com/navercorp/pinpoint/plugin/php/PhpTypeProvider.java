@@ -27,13 +27,7 @@ public class PhpTypeProvider implements TraceMetadataProvider {
     @Override
     public void setup(TraceMetadataSetupContext context) {
         context.addServiceType(PhpConstants.PHP);
-        context.addServiceType(PhpConstants.PHP_DB_CLIENT);
-        context.addServiceType(PhpConstants.PHP_CACHE_CLIENT);
-        context.addServiceType(PhpConstants.PHP_RPC_CLIENT, AnnotationKeyMatchers.ARGS_MATCHER);
-        context.addServiceType(PhpConstants.PHP_OTHERS);
-
-        context.addAnnotationKey(PhpConstants.PHP_FUNCTION_RETURN);
-        context.addAnnotationKey(PhpConstants.PHP_FUNCTION_ARGS);
-        context.addAnnotationKey(PhpConstants.PHP_FUNCTION_DESCRIPTION);
+        context.addServiceType(PhpConstants.PHP_METHOD, AnnotationKeyMatchers.ARGS_MATCHER);
+        context.addServiceType(PhpConstants.PHP_REMOTE_METHOD, AnnotationKeyMatchers.ARGS_MATCHER);
     }
 }
